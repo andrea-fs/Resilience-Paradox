@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bar Incontrà — Terrossa di Roncà (VR)</title>
+  <meta name="description" content="Bar Incontrà a Terrossa di Roncà, in provincia di Verona. Caffetteria, aperitivi e vini della Val d'Alpone.">
+  <meta property="og:title" content="Bar Incontrà — Terrossa di Roncà">
+  <meta property="og:description" content="Caffè la mattina, spritz la sera. In piazza a Terrossa.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#16130f">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="Bar Incontrà, torna su">Incontrà</a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu-nav">
+        <span class="sr-only">Apri menu</span>
+        <span class="nav__bar nav__bar--top"></span><span class="nav__bar nav__bar--bottom"></span>
+      </button>
+      <nav id="menu-nav" class="nav__links" aria-label="Principale">
+        <a href="#bar">Il bar</a>
+        <a href="#menu">Menù</a>
+        <a href="#foto">Foto</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <figure class="hero__media">
+        <!-- Sostituire con una foto vera del locale: img/hero.jpg -->
+        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=2000&q=75"
+             alt="Bancone del bar con luci calde la sera" fetchpriority="high">
+      </figure>
+      <div class="hero__content">
+        <p class="eyebrow">Terrossa · Roncà (VR)</p>
+        <h1 class="hero__title">Bar<br><em>Incontrà</em></h1>
+        <p class="hero__lead">Il caffè della mattina, lo spritz della sera.<br>In mezzo, tutto quello che serve.</p>
+        <div class="hero__actions">
+          <a class="btn btn--light" href="#menu">Vedi il menù</a>
+          <a class="btn btn--ghost" href="#contatti">Come arrivare</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRISCIA INFO -->
+    <section class="strip" aria-label="Informazioni rapide">
+      <div class="strip__item">
+        <span class="label">Dove</span>
+        <span>Terrossa, 37030 Roncà (VR)</span>
+      </div>
+      <div class="strip__item">
+        <span class="label">Oggi</span>
+        <span id="today-hours">—</span>
+      </div>
+      <div class="strip__item">
+        <span class="label">Telefono</span>
+        <!-- DA COMPILARE: numero reale -->
+        <a href="tel:+390000000000">+39 000 000 0000</a>
+      </div>
+    </section>
+
+    <!-- IL BAR -->
+    <section class="section about" id="bar">
+      <div class="section__head">
+        <span class="index">01</span>
+        <h2>Il bar</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text">
+          <p class="big">Un posto in paese dove fermarsi. Per un caffè al volo prima del lavoro o per restare un'ora in più con gli amici.</p>
+          <p>Da Incontrà il nome dice già tutto: è il punto dove ci si incrocia. La mattina brioche calde e cappuccino, a pranzo un tramezzino o un toast, la sera un calice di Durello o uno spritz con qualcosa da stuzzicare.</p>
+          <p>Siamo a Terrossa, in Val d'Alpone, tra i vigneti del Soave e le colline dei Lessini. I vini che versiamo arrivano da qui intorno.</p>
+        </div>
+        <figure class="about__img">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=75"
+               alt="Espresso versato in una tazzina" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section menu" id="menu">
+      <div class="section__head">
+        <span class="index">02</span>
+        <h2>Menù</h2>
+      </div>
+
+      <div class="menu__grid">
+        <div class="menu__col">
+          <h3>Caffetteria</h3>
+          <ul class="menu__list">
+            <li><span>Espresso</span><small>anche decaffeinato</small></li>
+            <li><span>Macchiato</span><small>caldo o freddo</small></li>
+            <li><span>Cappuccino</span><small>latte vegetale su richiesta</small></li>
+            <li><span>Orzo e ginseng</span><small>in tazza piccola o grande</small></li>
+            <li><span>Cioccolata calda</span><small>con o senza panna</small></li>
+            <li><span>Brioche</span><small>vuote, crema, marmellata, integrali</small></li>
+          </ul>
+        </div>
+
+        <div class="menu__col">
+          <h3>Aperitivo</h3>
+          <ul class="menu__list">
+            <li><span>Spritz</span><small>Aperol, Campari o Select</small></li>
+            <li><span>Hugo</span><small>sambuco, menta, prosecco</small></li>
+            <li><span>Lessini Durello</span><small>il metodo classico di casa</small></li>
+            <li><span>Soave</span><small>al calice</small></li>
+            <li><span>Valpolicella</span><small>al calice</small></li>
+            <li><span>Birre</span><small>alla spina e in bottiglia</small></li>
+          </ul>
+        </div>
+
+        <div class="menu__col">
+          <h3>Al banco</h3>
+          <ul class="menu__list">
+            <li><span>Tramezzini</span><small>fatti ogni mattina</small></li>
+            <li><span>Toast</span><small>classico o farcito</small></li>
+            <li><span>Panini</span><small>salumi e formaggi del territorio</small></li>
+            <li><span>Tagliere</span><small>sopressa, Monte Veronese, pane</small></li>
+            <li><span>Analcolici</span><small>succhi, bibite, spremute</small></li>
+            <li><span>Gelati</span><small>in confezione, d'estate</small></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="menu__note">Il menù cambia con le stagioni. Chiedete al banco cosa c'è oggi.</p>
+    </section>
+
+    <!-- BANDA IMMAGINE -->
+    <section class="band" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=2000&q=70"
+           alt="" loading="lazy">
+      <p class="band__quote"><em>Ci vediamo</em> da Incontrà.</p>
+    </section>
+
+    <!-- FOTO -->
+    <section class="section gallery" id="foto">
+      <div class="section__head">
+        <span class="index">03</span>
+        <h2>Foto</h2>
+      </div>
+      <!-- Sostituire con foto vere del locale (cartella img/) -->
+      <div class="gallery__grid">
+        <figure class="g g--tall">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=70"
+               alt="Tavolini e sedute del locale" loading="lazy">
+        </figure>
+        <figure class="g">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=70"
+               alt="Tazza di caffè sul tavolo" loading="lazy">
+        </figure>
+        <figure class="g">
+          <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=70"
+               alt="Cocktail sul bancone" loading="lazy">
+        </figure>
+        <figure class="g g--wide">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1400&q=70"
+               alt="Interno del bar con luce naturale" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- CONTATTI -->
+    <section class="section contact" id="contatti">
+      <div class="section__head">
+        <span class="index">04</span>
+        <h2>Contatti</h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info">
+          <div class="contact__block">
+            <span class="label">Indirizzo</span>
+            <!-- DA COMPILARE: via e numero civico -->
+            <p>Terrossa<br>37030 Roncà (VR)</p>
+            <a class="link" href="https://www.google.com/maps/search/?api=1&query=Bar+Incontr%C3%A0+Terrossa+Ronc%C3%A0" target="_blank" rel="noopener">Apri in Google Maps →</a>
+          </div>
+
+          <div class="contact__block">
+            <span class="label">Orari</span>
+            <!-- DA COMPILARE: orari reali. Aggiornare anche HOURS in script.js -->
+            <table class="hours">
+              <tbody>
+                <tr data-day="1"><th>Lunedì</th><td>6:30 – 20:00</td></tr>
+                <tr data-day="2"><th>Martedì</th><td>6:30 – 20:00</td></tr>
+                <tr data-day="3"><th>Mercoledì</th><td>6:30 – 20:00</td></tr>
+                <tr data-day="4"><th>Giovedì</th><td>6:30 – 20:00</td></tr>
+                <tr data-day="5"><th>Venerdì</th><td>6:30 – 23:00</td></tr>
+                <tr data-day="6"><th>Sabato</th><td>7:00 – 23:00</td></tr>
+                <tr data-day="0"><th>Domenica</th><td>7:30 – 13:00</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="contact__block">
+            <span class="label">Scrivici</span>
+            <!-- DA COMPILARE: contatti reali -->
+            <p><a class="link" href="tel:+390000000000">+39 000 000 0000</a></p>
+            <p><a class="link" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a> · <a class="link" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></p>
+          </div>
+        </div>
+
+        <div class="contact__map">
+          <iframe title="Mappa: Terrossa, Roncà"
+                  src="https://www.google.com/maps?q=Terrossa,+Ronc%C3%A0+VR&z=15&output=embed"
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="brand brand--footer">Incontrà</span>
+      <p>Bar Incontrà · Terrossa, Roncà (VR)</p>
+      <!-- DA COMPILARE: ragione sociale e P.IVA -->
+      <p class="muted">P.IVA 00000000000 · © <span id="year">2026</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
