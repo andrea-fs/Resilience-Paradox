@@ -21,10 +21,10 @@ Cercare `DA COMPILARE` in `index.html`:
 
 ## Foto
 
-Le immagini attuali sono foto d'esempio da Unsplash. Per sostituirle con foto
-vere del locale: creare una cartella `img/`, metterci le foto e cambiare gli
-attributi `src` in `index.html` (es. `src="img/bancone.jpg"`).
-Formato consigliato: JPG, lato lungo 1600–2000 px.
+Le foto in `img/` sono foto stock da Unsplash (licenza Unsplash, uso gratuito
+anche commerciale). Quando ci sono foto vere del locale basta sostituire i file
+in `img/` tenendo lo stesso nome, oppure cambiare gli `src` in `index.html`.
+Formato consigliato: JPG, lato lungo 1600–2000 px per l'apertura, 1000 px per le altre.
 
 ## Pubblicazione
 
